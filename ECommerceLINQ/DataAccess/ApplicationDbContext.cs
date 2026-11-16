@@ -24,6 +24,7 @@ namespace ECommerceLINQ.DataAccess
             base.OnConfiguring(optionsBuilder);
             optionsBuilder.UseSqlServer("Server=.;Database=ECommerceLINQ;Trusted_Connection=True;TrustServerCertificate=true;");
         }
+      
 
     }
 }

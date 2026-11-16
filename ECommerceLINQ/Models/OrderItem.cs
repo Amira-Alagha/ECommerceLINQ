@@ -14,5 +14,7 @@ namespace ECommerceLINQ.Models
         public int Quantity { get; set; }
         public decimal UnitPrice { get; set; }
         public decimal Discount { get; set; } // 0.10 = 10%
+        public decimal LineTotal =>
+       Quantity * UnitPrice * (1 - Discount);
     }
 }
